@@ -1,0 +1,391 @@
+@font-face {
+	font-family: "Furius";
+	src: url("../fonts/Furius-Italic.woff2") format("woff2"), url("../fonts/Furius-Italic.woff") format("woff");
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Furius";
+	src: url("../fonts/Furius-Title.woff2") format("woff2"), url("../fonts/Furius-Title.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Furius";
+	src: url("../fonts/Furius-Regular.woff2") format("woff2"), url("../fonts/Furius-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ________________Обнуление_________________ */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	font-family: "Furius";
+}
+/* ___________блок header___________________________ */
+.header {
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	border: 1px solid red;
+	background-color: rgba(223, 217, 217, 0.096);
+}
+.header__title {
+	text-align: center;
+	padding: 40px;
+}
+.title__image {
+	margin: 0px 0px 20px 0px;
+}
+img.title__image {
+	max-width: 100%;
+	border: 10px solid rgba(151, 6, 6, 0.144);
+	border-radius: 50px;
+	box-shadow: 10px -10px 10px 5px rgba(151, 6, 6, 0.336);
+}
+.title__text {
+	font-style: italic;
+	font-weight: 500;
+	font-size: 52px;
+	color: rgba(73, 14, 75, 0.842);
+	text-transform: capitalize;
+	letter-spacing: 3px;
+}
+.title__text span {
+	color: rgb(158, 228, 27);
+}
+.title__text span + span {
+	color: indigo;
+	letter-spacing: 10px;
+}
+.header__list {
+	max-width: 50%;
+}
+.list__text {
+	margin: 0px 0px 15px 30px;
+}
+.list__link {
+	font-size: 22px;
+	color: rgba(55, 0, 128, 0.527);
+	font-style: italic;
+	font-weight: 500;
+}
+.header__sublist {
+}
+.sublist__text {
+	margin: 0px 0px 15px 40px;
+}
+.sublist__link {
+	font-size: 22px;
+	color: rgba(0, 128, 0, 0.205);
+	font-style: italic;
+	font-weight: 500;
+}
+
+/* ___________Main___________________________ */
+
+/* ___________блок 1___________________________ */
+.main__block1 {
+	padding: 40px;
+}
+.block1__title {
+	font-style: italic;
+	font-weight: 500;
+	font-size: 40px;
+	word-spacing: 10px;
+	text-align: center;
+	margin: 20px 0px 20px 0px;
+	color: indigo;
+	line-height: 120%;
+	box-shadow: inset 10px 10px 15px 20px rgba(76, 0, 130, 0.11);
+	border-radius: 20px 0px;
+}
+.block1__text p {
+	font-size: 18px;
+	line-height: 120%;
+	padding: 10px;
+	margin: 0px 0px 10px 0px;
+	border-bottom: 20px dashed rgb(248, 155, 194);
+}
+.block1__text span {
+	font-weight: 500;
+	font-size: 22px;
+	text-decoration: underline;
+	color: rgba(250, 82, 208, 0.699);
+}
+.block1__text p + p {
+	background-color: grey;
+	box-shadow: 5px 5px 2px 2px #000;
+	border-radius: 10px;
+	border-bottom: none;
+}
+.block1__figurs {
+	overflow: scroll;
+	max-width: 70%;
+	max-height: 580px;
+	background-color: rgba(0, 132, 255, 0.563);
+	padding: 50px;
+	margin: 20px auto;
+	border-radius: 100px;
+}
+.figurs__text {
+	font-style: italic;
+	font-weight: 500;
+	font-size: 20px;
+	word-spacing: 10px;
+	text-align: center;
+
+	color: indigo;
+	line-height: 120%;
+}
+.figurs__square {
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+	opacity: 0.9;
+	margin: 20px auto;
+}
+.figurs__circle {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(255, 161, 227);
+	opacity: 0.9;
+	margin: 20px auto;
+	border-radius: 50%;
+}
+.figurs__triangle {
+	width: 0px;
+	height: 0px;
+	border-right: 100px solid transparent;
+	border-left: 100px solid transparent;
+	border-bottom: 200px solid red;
+	opacity: 0.9;
+	margin: 20px auto;
+}
+.figurs__rhombus-top {
+	width: 0px;
+	height: 0px;
+	border-right: 100px solid transparent;
+	border-left: 100px solid transparent;
+	border-bottom: 200px solid indigo;
+	opacity: 0.9;
+	margin: 20px auto;
+}
+.figurs__rhombus-bottom {
+	width: 0px;
+	height: 0px;
+	border-right: 100px solid transparent;
+	border-left: 100px solid transparent;
+	border-top: 200px solid indigo;
+	opacity: 0.9;
+	margin: -20px auto;
+}
+/* ___________блок 2___________________________ */
+.block2__text {
+	padding: 20px;
+}
+.block2__text p {
+	font-size: 18px;
+	line-height: 120%;
+	padding: 10px;
+	margin: 0px 0px 10px 0px;
+}
+.attention span {
+	font-weight: 500;
+	font-size: 22px;
+	text-decoration: underline;
+	color: rgba(250, 82, 208, 0.699);
+}
+.attention {
+	background-color: grey;
+	box-shadow: 5px 5px 2px 2px #000;
+	border-radius: 10px;
+}
+.home__tree {
+	width: 100%;
+}
+.home {
+	width: 45%;
+	display: inline-block;
+}
+.home__top {
+	width: 0px;
+	height: 0px;
+	border-right: 100px solid transparent;
+	border-left: 100px solid transparent;
+	border-bottom: 200px solid red;
+	opacity: 0.9;
+	margin: 0px auto;
+}
+
+.home__bottom {
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+	opacity: 0.9;
+	margin: 0 auto;
+	padding: 50px;
+}
+.home__center {
+	width: 100px;
+	height: 50px;
+	background-color: rgba(51, 31, 31, 0.788);
+}
+.tree {
+	width: 45%;
+	display: inline-block;
+}
+.tree__top {
+	width: 150px;
+	height: 170px;
+	background-color: rgb(39, 85, 18);
+	opacity: 0.9;
+	margin: 0px auto;
+	border-radius: 50%;
+}
+.tree__bottom {
+	width: 30px;
+	height: 150px;
+	background-color: rgb(121, 80, 4);
+	opacity: 0.9;
+	margin: 0px auto;
+}
+/* ___________блок 3___________________________ */
+.main__block3 {
+}
+
+.block3__text {
+	padding: 20px;
+}
+.block3__text p {
+	font-size: 18px;
+	line-height: 120%;
+	padding: 10px;
+	margin: 0px 0px 10px 0px;
+}
+.block3__text span {
+	font-style: italic;
+	font-weight: 500;
+	color: indianred;
+	box-shadow: 2px 2px 3px indianred;
+}
+.attention span {
+	font-weight: 500;
+	font-size: 22px;
+	text-decoration: underline;
+	color: rgba(250, 82, 208, 0.699);
+	box-shadow: none;
+}
+.mountain__moon {
+	background-color: darkblue;
+	max-width: 100%;
+	overflow: auto;
+	margin: 0 auto;
+}
+.left {
+	max-width: 70%;
+	display: inline-block;
+}
+.mountain {
+	width: 0px;
+	height: 0px;
+	border-right: 125px solid transparent;
+	border-left: 250px solid transparent;
+	border-bottom: 200px solid grey;
+	opacity: 0.9;
+	margin: 0px auto;
+}
+.right {
+	max-width: 30%;
+	display: inline-block;
+}
+.moon {
+	width: 75px;
+	height: 75px;
+	background-color: rgb(224, 204, 22);
+	opacity: 0.9;
+	margin: 0px 0px 120px 50px;
+	border-radius: 50%;
+}
+.moon__white {
+	width: 75px;
+	height: 75px;
+	background-color: rgb(85, 18, 18);
+	opacity: 1;
+	margin: 0px 0px 120px -15px;
+	border-radius: 50%;
+	background-color: darkblue;
+}
+/* ___________блок 4___________________________ */
+.block1__title {
+}
+.block__disappeared {
+	font-size: 18px;
+	line-height: 120%;
+	padding: 10px;
+	margin: 0px 0px 10px 0px;
+}
+.block__disappeared p {
+	margin: 0px 0px 10px 0px;
+	border-bottom: 2px solid red;
+	padding-bottom: 15px;
+	opacity: 0.5;
+}
+.block__disappeared span.hello {
+	opacity: 0.1;
+}
+h2 span {
+	font-size: 50px;
+	color: red;
+	font-weight: 500;
+	font-style: italic;
+}
+/* ___________footer ___________________________ */
+.footer {
+	visibility: hidden;
+}
+.phone {
+	white-space: nowrap;
+}
